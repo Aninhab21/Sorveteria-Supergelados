@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERGELADOS - Sabor e Qualidade que você merece</title>
+    <link rel="stylesheet" href="aula12.css/aula12.css"
+     <link rel="stylesheet" href="aula12.js/aula.js"
+     
+</head>
+<body>
+
+    <header>
+        <h1>SUPERGELADOS Ana</h1>
+        <p>O sabor e o frescor que você merece!</p>
+    </header>
+
+    <main class="container">
+        <!-- Quem Somos -->
+        <section class="card">
+            <h2>Quem somos?</h2>
+            <p>Há 10 anos, a Supergelados Ana leva sabor, qualidade e momentos especiais aos seus clientes. Ao longo dessa trajetória, conquistamos a confiança da nossa comunidade com sorvetes, picolés, açaís e produtos gelados para todas as idades. Caso quiser saborear nossos produtos, acesse o link abaixo e solicite conosco!</p>
+        </section>
+
+        <!-- Produtos Disponíveis -->
+        <section class="card">
+            <h2>Nossos Produtos disponíveis</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <span class="product-icon">🍦</span>
+                    <h3>Picolés</h3>
+                    <button onclick="adicionarAoCarrinho('Picolé', 5.00)">Aperte aqui</button>
+                </div>
+                <div class="product-item">
+                    <span class="product-icon">🍨</span>
+                    <h3>Self-Service à vontade</h3>
+                    <button onclick="adicionarAoCarrinho('Self-Service', 12.00)">Aperte aqui</button>
+                </div>
+                <div class="product-item">
+                    <span class="product-icon">🍧</span>
+                    <h3>Potes de Sorvete</h3>
+                    <button onclick="adicionarAoCarrinho('Pote de Sorvete', 25.00)">Aperte aqui</button>
+                </div>
+                <div class="product-item">
+                    <span class="product-icon">🟣</span>
+                    <h3>Açaí Especial da casa</h3>
+                    <button onclick="adicionarAoCarrinho('Açaí Especial', 15.00)">Aperte aqui</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrinho de Compras -->
+        <section class="card">
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho" class="cart-list">
+                <li class="cart-empty">Seu carrinho está vazio.</li>
+            </ul>
+            <p class="cart-total">Total: R$ <span id="valor-total">0,00</span></p>
+        </section>
+
+        <!-- Chamada para Ação -->
+        <section class="card cta-section">
+            <h2>Acesse o link abaixo e solicite conosco!</h2>
+            <button class="btn" id="btnSolicitar" onclick="efetuarPagamento()">Fazer Pedido Agora</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SUPERGELADOS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="aula5.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Super Gelados - Sorvete, picolé e açaí"> 
+  <meta name="keywords" content="Supergelados, sorvete, picolé, açaí">
+  <meta name="author" content="Ana Beatriz">
+ <link rel="stylesheet" href="aula11.css/aula11.css">
+  <title>SUPERGELADOS - Sabor e Qualidade que você merece</title>
+</head>
+<body>
+
+  <header>
+    <h1 style="color: rgb(13, 13, 14);">SUPERGELADOS</h1>
+    <p style="color: black;">O sabor e o frescor que você merece!</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- Quem somos -->
+    <section class="card">
+      <h2>Quem somos?</h2>
+      <p>
+        Há 10 anos, a Supergelados Ana leva sabor, qualidade e momentos especiais aos seus clientes.
+        Ao longo dessa trajetória, conquistamos a confiança da nossa comunidade com sorvetes, picolés, açaís e produtos gelados para todas as idades. 
+        Caso queira saborear nossos produtos, acesse o link abaixo e solicite conosco!
+      </p>
+    </section>
+
+    <!-- Produtos disponíveis -->
+    <section class="card">
+      <h2 style="color: blue;">Nossos Produtos Disponíveis</h2>
+      <div class="products-grid">
+        <div class="product-item">
+          <span>🍦</span>
+          <h3>Picolé</h3>
+          <p>R$ 5,00</p>
+          <button onclick="adicionarEComprar('Picolé', 5.00)">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product-item">
+          <span>🍨</span>
+          <h3>Self-Service</h3>
+          <p>R$ 10,00</p>
+          <button onclick="adicionarEComprar('Self-Service', 10.00)">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product-item">
+          <span>🍧</span>
+          <h3>Pote de Sorvete</h3>
+          <p>R$ 15,00</p>
+          <button onclick="adicionarEComprar('Pote de Sorvete', 15.00)">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product-item">
+          <span>🟣</span>
+          <h3>Açaí Especial</h3>
+          <p>R$ 7,00</p>
+          <button onclick="adicionarEComprar('Açaí Especial', 7.00)">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Carrinho -->
+    <section class="card cart-section" id="carrinho-card" style="display: none;">
+      <h2>Seu Carrinho e Valor Total</h2>
+      <ul id="lista-carrinho" style="list-style: none; margin-bottom: 1rem;"></ul>
+      <p style="font-size: 1.2rem; margin-bottom: 1rem;"><strong>Total a Pagar: R$ <span id="valor-total">0.00</span></strong></p>
+      <button id="btnFinalizar">Efetuar Compra</button>
+    </section>
+
+    <!-- Atendimento -->
+    <section class="card cta-section">
+      <img src="imagem2.html/image.png" width="700" height="400">
+        <hr>
+      <h2>Acesse o link abaixo e solicite conosco!</h2>
+      <div>
+        <button class="btn" id="btnSolicitar">Ver Produtos</button>
+      </div>
+    </section>
+
+  </div>
+  <script src= aula6.js/aula6.js></script>
+</body>
+</html>
